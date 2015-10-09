@@ -1,0 +1,19 @@
+<html>
+<script type="text/javascript">
+// http://www.youtube.com/watch?v=La_aW-c14P4&feature=youtube_gdata
+link = 'http://www.youtube.com/watch?v=La_aW-c14P4&feature=youtube_gdata';
+output = cutLink(link);
+
+alert(output);
+
+function separateId(str) {
+	var temp = str.split("&");
+	return temp[0];
+}
+
+function cutLink(longLink){
+	var temp = longLink.split("=");
+	return separateId(temp[1]);
+}
+ </script>
+ </html>
